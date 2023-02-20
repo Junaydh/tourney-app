@@ -3,7 +3,9 @@ import React from 'react';
 function Player() {
   return (
     <article className='Player'>
-      <h1>John<span>Secret</span>Doe</h1>
+      <h1>
+        John <span>Secret</span> Doe
+      </h1>
       {}
       <h2 className='zero'>Currently with no wins :(</h2>
       {}
