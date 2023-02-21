@@ -2,11 +2,13 @@ import React from 'react';
 import Player from './Player';
 
 function PlayerList(props) {
-  const onePlayer = props.playerData[0];
+  const players = props.playerData.map((player) => {
+    return <Player {...player} key={player.gamerTag} />
+  });
   return (
     <section className='PlayerList'>
       <h1>Current participating players</h1>
-      <Player {...onePlayer} />
+      {players}
     </section>
   );
 }
